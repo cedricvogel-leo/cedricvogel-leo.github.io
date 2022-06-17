@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <title>Hosting auf Github</title>
+</head>
+
+<body>
+
+  <main class="container">
+    <nav>
+      <ul>
+      </ul>
+      <ul>
+        <li><a href="#erstellen">Neues Projekt</a></li>
+        <li><a href="#hochladen">Seite hochladen</a></li>
+        <li><a href="#bearbeiten">Seite bearbeiten</a></li>
+        <li><a href="#bilder">Bilder extern hosten</a></li>
+        <li><a href="#domain">Domain Namen</a></li>
+      </ul>
+    </nav>
+    <h1>Webseite auf Github</h1>
+    <article>
+      <h2 id="erstellen">Projekt erstellen</h2>
+      <div>
+        <h3>Account erstellen</h3>
+        Um eine Webseite auf Github zu publizieren brauchen sie einen Account.
+        Den können sie hier erstellen: <a href="https://github.com/signup">github.com/signup</a>
+        Sie brauchen dazu eine gültige Email-Adresse.
+      </div>
+      <h3>Neues Projekt</h3>
+      <div class="grid">
+        <div>
+          Melden sie sich bei Github an und klicken sie auf "Create Repository"
+        </div>
+        <div>
+          <img src="pictures/create_repo.png" alt="Repo erstellen Button">
+        </div>
+      </div>
+      <div class="grid">
+        <div>
+          Der Name den sie dem Repository geben, muss die Form username.github.io haben,
+          wobei username dem Benutzernamen entspricht, den sie gewählt haben.
+          Sie müssen die Option Public anwählen.
+        </div>
+        <img src="/pictures/repo_name.png" alt="Repo benennen">
+      </div>
+    </article>
+    <article>
+      <h2 id="hochladen">Daten Hochladen</h2>
+      <div>
+        Nachdem sie das Repository erstellt haben, befinden sie sich auf der Seite, wo sie ihre Webseite verwalten
+        können.
+        (Die Url lautet github.com/username/username.github.io Wobei sie username wiederum durch ihren Benutzernamen
+        ersetzen müssen)
+        <br>
+        Klicken sie auf "uploading an existing file:"
+        <br>
+        <img src="/pictures/new_file.png" alt="new file link">
+        <br>
+        Ziehen sie den Inhalt ihres Webseiten-Ordners mit der Maus auf die Fläche, welche erscheint.
+        <br>
+        <img src="/pictures/drop-area.png" alt="Drop Bereich">
+        <br>
+        Klicken sie unten auf der Seite auf "Commit Changes".
+        Nach einigen Minuten sollte ihre Webseite auf username.github.io sichtbar sein.
+      </div>
+    </article>
+    <article>
+      <h2 id="bearbeiten">Webseite bearbeiten</h2>
+      <div>
+        <h3>Online Editor</h3>
+        Sie können ihre Webseite online mit Visual Studio Code bearbeiten. Dazu müssen sie auf folgende URL gehen:
+        <br>
+        github.dev/username/username.github.io
+        <br>
+        username entspricht auch hier ihrem Benutzernamen.
+      </div>
+      <h3>Änderungen speichern</h3>
+      <div class="grid">
+
+        <img src="https://drive.google.com/uc?id=1vi7puHcNYGxPZ_MNOnpruOuBs_5v0gUX" alt="source control panel">
+        <div>
+          Im Gegensatz zu der lokalen vevsion von Visual Studio code gibt es keinen Button zum speichern einer Datei,
+          welche sie verändert haben.
+          <br>
+          Stattdesen müssen sie auf das "Source Control" Symbol am linken Rand das Browsers klicken, in der Message-Box
+          ihre Änderungen beschreiben
+          und dann auf das Häckchen (Commit and Push) klicken.
+          <br>
+          Auch hier dauert es einige Minuten bis die Änderungen auf der Webseite sichtbar sind.
+        </div>
+      </div>
+    </article>
+    <article>
+      <h2 id="bilder">Bilder Hosten</h2>
+      Wenn sie eigene Bilder auf ihrer Webseite haben, welche gross sind, kann es sinnvoll sein, diese an einem anderen
+      Ort
+      zu Hosten
+      und einzubinden. Da der Speicherplatz auf Github begrenzt ist.
+      Ein Möglichkteit ist zum Beispiel Google drive.
+      Hier finden sie eine Anleitung zum <a href="https://daily-dev-tips.com/posts/host-images-via-google-drive/">Hosten
+        von
+        Bildern auf Google Drive</a>.
+    </article>
+    <article>
+      <h2 id="domain">Domain Name</h2>
+      Wenn sie ihren eigenen Domeinnamen für ihre Webseite haben wollen, müssen sie eine Domain Namen mieten. Für
+      CH-Domains bezahlen sie
+      etwa 15 Franken im Jahr.
+      <br>
+      Eine Liste mit allen Firmen, welche diese Domains offiziell vermieten <a
+        href="https://www.nic.ch/de/registrars/">finden sie hier</a>.
+      Wenn sie die Seite auf Github hosten brauchen sie nur den Domainnamen kein Hosting. Viele Der Firmen haben Pakete
+      für Hosting und Domainnamen.
+      Ein solches brauchen sie nicht.
+      <br>
+      Wenn sie eine Domain registriert haben wird ihnen <a
+        href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site">hier erklärt</a>,
+      wie sie Ihre Domain für Ihre Seite auf Github nutzen können.
+    </article>
+  </main>
+</body>
+
+
+</html>
